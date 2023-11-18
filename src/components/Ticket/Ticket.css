@@ -1,0 +1,127 @@
+.ticket-card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .ticket-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .ticket-id {
+    font-weight: lighter;
+    font-size: small;
+  }
+  
+  .ticket-profile-picture {
+    width: 30px;
+    height: 30px;
+    background-color: #0077b5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 16px;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  .ticket-title {
+    /* flex: 1; */
+    font-weight: bold;
+    font-size: medium;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .ticket-checkbox {
+    display: flex;
+    align-items: center;
+    margin-right: 1%;
+  }
+  
+  .ticket-checkbox-ticked {
+    width: 20px;
+    height: 20px;
+    background-color: #0077b5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  .ticket-bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .ticket-user-status {
+    position: absolute; /* Add absolute positioning */
+    bottom: 0;
+    right: 0;
+    width: 10px; /* Adjust the size as needed */
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  .ticket-user-status.available {
+    background-color: #fdd835; /* Yellow color for available */
+  }
+  
+  .ticket-user-status.not-available {
+    background-color: #dddcdc; /* White color for not available */
+  }
+  .custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #1b1d8a; /* Border color for the unchecked state */
+    border-radius: 70%;
+    margin-right: 2%;
+  }
+  
+  .custom-checkbox input {
+    display: none;
+  }
+  
+  .custom-checkbox .checkmark {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #ffffff; /* Color for the checkmark */
+    display: none;
+  }
+  
+  .custom-checkbox input:checked + .checkmark {
+    display: block;
+  } 
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .ticket-card {
+      flex-direction: row;
+    }
+  
+    .ticket-top {
+      flex-direction: column;
+    }
+  
+    .ticket-title {
+      margin-top: 10px;
+    }
+  }
+  

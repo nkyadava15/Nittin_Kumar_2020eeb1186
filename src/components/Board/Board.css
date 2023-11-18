@@ -1,0 +1,25 @@
+.card {
+    width:18%; 
+    float : left;
+    margin-top: auto;
+    margin-left: 10px;
+    align-items:flex-start;
+  }
+.display-button{
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+.options{
+    position: relative;
+    margin-right: 20%;
+    margin-top: 1px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+.display-options{
+    position: relative;
+    margin-right: 80%;
+    padding-bottom: 1px;
+}
